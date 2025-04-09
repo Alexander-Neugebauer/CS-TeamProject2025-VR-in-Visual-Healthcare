@@ -1,7 +1,7 @@
 
 # Interactive Scene Assignment
 
-> ## Recommended Literature
+> ## Recommended Reads
 > - [**01 Unity Installation and Project Setup**](../Unity%20Basics/01%20Unity%20Installation%20and%20Project%20Setup.md)
 > - [**02 Unity Introduction and Tutorials**](../Unity%20Basics/02%20Unity%20Introduction%20and%20Tutorials.md)
 
