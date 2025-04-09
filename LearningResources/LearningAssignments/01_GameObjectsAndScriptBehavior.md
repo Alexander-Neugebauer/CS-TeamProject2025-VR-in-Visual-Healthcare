@@ -1,5 +1,5 @@
 
-# Interactive Scene Assignment
+# Learning Assignment - GameObjects and Script Behavior
 
 > ## Recommended Reads
 > - Unity Basics
