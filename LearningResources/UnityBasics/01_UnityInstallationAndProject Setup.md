@@ -19,9 +19,7 @@
 - Choose the **Universal 3D Core** preset.
 - Select any **Project Name** and **Location**.
 - Select your **Unity Organization** (linked with your Unity ID).
-- **Do not** select:
-  - **Connect to Unity Cloud**
-  - **Use Unity Version Control**
+- **Do not** select 'Connect to Unity Cloud' or 'Use Unity Version Control'
 - Wait until the project loads. You are now in the **Unity Editor** interface.
 
 > **Note:** You’ll also need an IDE to edit scripts in Unity. The most commonly used IDE is **Visual Studio 2022**, but you can choose your preferred IDE.
