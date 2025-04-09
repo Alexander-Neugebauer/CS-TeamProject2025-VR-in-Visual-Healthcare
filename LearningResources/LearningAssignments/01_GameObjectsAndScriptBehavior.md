@@ -47,4 +47,4 @@ Apply the learned concepts about **GameObjects**, **MonoBehaviour scripts**, **P
 - Instead of destroying Food Spheres, use [object pooling](https://www.youtube.com/watch?v=lqiZxpTETl4) to reuse them.
 
 ## 2. Add a Reaction
-- Implement a **fun reaction** for the pet whenever it is fed.
+- Implement a fun reaction for the pet whenever it is fed.
