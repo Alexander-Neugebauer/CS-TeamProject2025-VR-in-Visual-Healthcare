@@ -2,8 +2,8 @@
 # Interactive Scene Assignment
 
 > ## Recommended Reads
-> - [**01 Unity Installation and Project Setup**](../Unity%20Basics/01%20Unity%20Installation%20and%20Project%20Setup.md)
-> - [**02 Unity Introduction and Tutorials**](../Unity%20Basics/02%20Unity%20Introduction%20and%20Tutorials.md)
+> - [**01 Unity Installation and Project Setup**](../UnityBasics/01_UnityInstallationAndProjectSetup.md)
+> - [**02 Unity Introduction and Tutorials**](../UnityBasics/02_UnityIntroductionAndTutorials.md)
 
 Apply the learned concepts about **GameObjects**, **MonoBehaviour scripts**, **Prefabs**, and the **Unity Input System** to create a small interactive scene.
 
