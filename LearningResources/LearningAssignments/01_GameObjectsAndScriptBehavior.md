@@ -2,13 +2,14 @@
 # Interactive Scene Assignment
 
 > ## Recommended Reads
-> - [**01 Unity Installation and Project Setup**](../UnityBasics/01_UnityInstallationAndProjectSetup.md)
-> - [**02 Unity Introduction and Tutorials**](../UnityBasics/02_UnityIntroductionAndTutorials.md)
+> - Unity Basics
+>   - **01_UnityInstallationAndProjectSetup**
+>   - **02_UnityIntroductionAndTutorials**
 
 Apply the learned concepts about **GameObjects**, **MonoBehaviour scripts**, **Prefabs**, and the **Unity Input System** to create a small interactive scene.
 
 ## 1. Scene Setup
-- Create a **new scene**.
+- Create a **new scene** in the project window.
 - Add a **Ground Plane**.
 - Add a **Pet Cube** (3D Cube) to represent your pet.
   - Optionally add other shapes to customize your pet.
