@@ -26,12 +26,12 @@ Apply the learned concepts about **GameObjects**, **MonoBehaviour scripts**, **P
   - `Pet.cs` → Attach to the `Pet Cube`.
 
 ## 4. Install the Input System Package
-- Follow the [Unity documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Installation.html) to install the package.
+- Follow the [Unity documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/Installation.html) to install the package.
 
 ## 5. Food Spawning Logic (`GameManager.cs`)
 - Use the Unity Input System to detect a key press (e.g., **F key**).
   > **Note**: For this assignment, using the Quickstart method for getting input from a keyboard is acceptable.
-  > In your course project and in any larger Unity project, it is highly recommended to use [Input Action References](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Actions.html#creating-actions) instead.
+  > In your course project and in any larger Unity project, it is highly recommended to use [Input Action References](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/Actions.html) instead.
 - When the key is pressed: Instantiate a **Food Sphere** (using the previously created prefab) at a random position on the ground plane.
 
 ## 6. Pet Behavior (`Pet.cs`)
