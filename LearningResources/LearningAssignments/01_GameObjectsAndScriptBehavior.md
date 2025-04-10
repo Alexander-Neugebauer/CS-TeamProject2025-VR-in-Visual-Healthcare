@@ -30,7 +30,7 @@ Apply the learned concepts about **GameObjects**, **MonoBehaviour scripts**, **P
 
 ## 5. Food Spawning Logic (`GameManager.cs`)
 - Use the Unity Input System to detect a key press (e.g., **F key**).
-  > **Note**: For this assignment, using the Quickstart method for getting input from a keyboard is acceptable.
+  > **Note**: For this assignment, using the simple method for getting input from a keyboard (`Keyboard.current[Key.F].wasPressedThisFrame`) is acceptable.
   > In your course project and in any larger Unity project, it is highly recommended to use [Input Action References](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/Actions.html) instead.
 - When the key is pressed: Instantiate a **Food Sphere** (using the previously created prefab) at a random position on the ground plane.
 
