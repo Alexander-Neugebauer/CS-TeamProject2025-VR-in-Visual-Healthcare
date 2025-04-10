@@ -17,4 +17,4 @@ The Unity Editor interface contains the following elements:
 2.	**Tutorial Article** - Detailed introduction to creating scene objects and adding script behavior. Teaches many relevant aspects for Unity development: [Basics - Game Objects and Scripts](https://catlikecoding.com/unity/tutorials/basics/game-objects-and-scripts/)
 3.	**Youtube Tutorial** - Covers different ways to reference other classes and GameObjects in a script: [How to get a variable from another script in Unity](https://www.youtube.com/watch?v=2pCkInvkwZ0)
 4.	**Youtube Tutorial** - Covers the concept of prefabs, how to create them and how to instantiate scene objects from a prefab reference: [How to Make and Instantiate Prefabs](https://www.youtube.com/watch?v=IfcCXVXjLNM)
-5.	**Unity Documentation** - Introduction to the Unity Input System: [Unity Input System - Installation and Quick Start Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/Installation.html)
+5.	**Unity Documentation** - Introduction to the Unity Input System: [Unity Input System - Installation and Quick Start Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/index.html)
