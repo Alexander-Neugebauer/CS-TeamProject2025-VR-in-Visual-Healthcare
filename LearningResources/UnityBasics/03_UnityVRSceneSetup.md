@@ -11,7 +11,6 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
       - **Starter Assets**
       - **XR Device Simulator**
 
----
 
 ## 2. Setup for Android-based VR Headsets (e.g., Meta Quest, Pico)
 
@@ -43,7 +42,6 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
   - In **Target Architecture**, only **ARM64** should be checked
   - Ensure that under **Scripting Define Symbols**, `USE_INPUT_SYSTEM_POSE_CONTROL` is listed (if not, add a new empty element and paste the name in)
 
----
 
 ## 3. Scene Setup
 
@@ -60,7 +58,6 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
 - To enable the simulation of a VR headset on the PC, search the **XR Device Simulator** and drag it from the Project window into the Hierarchy
   > Note: This object must be disabled whenever you export the scene to the VR headset, otherwise it overwrites the input from the VR controllers in the build
 
----
 
 ## 4. Create a Test Build
 
@@ -73,8 +70,6 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
 - Make sure that the **XR Device Simulator** object is enabled
 - When starting the scene, you should now be able to move using the **WASD** keys, press **Tab** to loop through headset and controllers, and press **G** to simulate the **Grab** button of the VR controllers
 - Try grabbing and throwing the 3D GameObject
-
----
 
 ### Test on a stand-alone VR Headset
 
