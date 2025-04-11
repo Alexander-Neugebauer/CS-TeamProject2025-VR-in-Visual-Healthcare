@@ -58,8 +58,8 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
 - If no **EventSystem** exists, right-click in the **Hierarchy**, select **UI → Event System**
 - Also add an **XR Interaction Manager** (Right-click → XR → Interaction Manager)
 - To enable the simulation of a VR headset on the PC, search the **XR Device Simulator** and drag it from the Project window into the Hierarchy
-> Note: This object must be disabled whenever you export the scene to the VR headset, otherwise it overwrites the input from the VR controllers in the build
-> 
+  > Note: This object must be disabled whenever you export the scene to the VR headset, otherwise it overwrites the input from the VR controllers in the build
+
 ---
 
 ## 4. Create a Test Build
