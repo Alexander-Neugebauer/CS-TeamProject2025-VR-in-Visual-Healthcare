@@ -38,8 +38,8 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
   - In **Graphics API**, remove **OpenGLES3**
   - Ensure that **Allow HDR Display Output** is unchecked (otherwise, this could impact performance in VR)
   - Set the minimum API Level to **Android 10.0 (API level 29)** or higher
-  - Set **Active Input Handling** to **Input System Package (New)**
   - In **Target Architecture**, only **ARM64** should be checked
+  - Set **Active Input Handling** to **Input System Package (New)**
   - Ensure that under **Scripting Define Symbols**, `USE_INPUT_SYSTEM_POSE_CONTROL` is listed (if not, add a new empty element and paste the name in)
 
 
