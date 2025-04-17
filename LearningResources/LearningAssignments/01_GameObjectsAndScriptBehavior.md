@@ -1,5 +1,5 @@
 
-# Learning Assignment - GameObjects and Script Behavior
+# Learning Assignment 1 - GameObjects and Script Behavior
 
 > ## Recommended Reads
 > - Unity Basics
