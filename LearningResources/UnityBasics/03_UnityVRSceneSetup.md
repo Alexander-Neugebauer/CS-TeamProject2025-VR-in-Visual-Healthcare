@@ -9,7 +9,8 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
   - **XR Interaction Toolkit** *(this also installs the Unity Input System, if not already installed)*
     - Go to **Samples** under this package and import:
       - **Starter Assets**
-      - **XR Device Simulator**
+      - **XR Interaction Simulator**
+      > Note: Make sure to use the **XR Interaction Simulator**, not the **XR Device Simulator**, which was used in previous projects but is now outdated.
 
 
 ## 2. Setup for Android-based VR Headsets (e.g., Meta Quest, Pico)
@@ -25,10 +26,12 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
   - Under **Enabled Interaction Profiles**, enable:
     - **Khronos Simple Controller Profile**
     - **Meta Quest Touch Pro Controller Profile**
-      > Note: If you plan on using Eye Tracking in your project, you should also enable **Eye Gaze Interaction Profile**
-  - Under **Feature Groups**, check **Meta Quest Support**. This should be the only option checked here.
+      > Note: If you plan on using Eye Tracking in your project, you should also enable **Eye Gaze Interaction Profile**.
+  - Under **Feature Groups**, check **Meta Quest Support**. Also ensure that **Mock Runtime** is not checked.
+    > Note: If you want to use Eye Tracking on the Meta Quest Pro, check **Foveated Rendering**. Otherwise, the Meta Quest Pro will not recognize the app to require Eye Tracking capabilities and will disable Eye Tracking functionality during use.
   - Under **Project Validation**, click **Fix All** *(It might take a few seconds for Unity to compile before the Issues disappear)* 
     > Note: The issue about Screen Ambient Occlusion will not be automatically fixed, but can be ignored.
+  - Under **XR Interaction Toolkit**, check **Use XR Interaction Simulator in scenes** and **Instantiate in Editor Only**
 
 ### Configuring Player Settings
 - In the **Project Settings**, go to **Player** and make sure that you are in the Android Settings tab
@@ -37,11 +40,11 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
   - Make sure that **Color Space** is set to **Linear**
   - In **Graphics API**, remove **OpenGLES3**
   - Ensure that **Allow HDR Display Output** is unchecked (otherwise, this could impact performance in VR)
+  - Un-check **Override Default Package Name**, or manually adjust the name your application will be exported as
   - Set the minimum API Level to **Android 10.0 (API level 29)** or higher
   - In **Target Architecture**, only **ARM64** should be checked
-  - Set **Active Input Handling** to **Input System Package (New)**
+  - Ensure that **Active Input Handling** is set to **Input System Package (New)**
   - Ensure that under **Scripting Define Symbols**, `USE_INPUT_SYSTEM_POSE_CONTROL` is listed (if not, add a new empty element and paste the name in)
-
 
 ## 3. Scene Setup
 
@@ -55,8 +58,6 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
 - In the Project window, search for **XR Origin (XR Rig)** and drag it into the Scene Window or Hierarchy
 - If no **EventSystem** exists, right-click in the **Hierarchy**, select **UI → Event System**
 - Also add an **XR Interaction Manager** (Right-click → XR → Interaction Manager)
-- To enable the simulation of a VR headset on the PC, search the **XR Device Simulator** and drag it from the Project window into the Hierarchy
-  > Note: This object must be disabled whenever you export the scene to the VR headset, otherwise it overwrites the input from the VR controllers in the build
 
 
 ## 4. Create a Test Build
@@ -65,16 +66,15 @@ In this chapter, you will learn how to set up a basic VR scene with an interacta
 - Add a Plane as a ground plane and place the **XR Origin** above it
 - Add a 3D GameObject (e.g., Sphere or Cube) above the ground
   - Click on the GameObject and in the Inspector, add a **XR Grab Interactable** component to it *(this also adds a Rigidbody component to the object, which means that the object is treated as a physics-based object)
+  > Note: See 'LearningAssignments/02b_VRSelectionAndInterfaces' in the Learning Resources for information on how to click on objects or interfaces without grabbing them
 
 #### Controls in Editor
-- Make sure that the **XR Device Simulator** object is enabled
-- When starting the scene, you should now be able to move using the **WASD** keys, press **Tab** to loop through headset and controllers, and press **G** to simulate the **Grab** button of the VR controllers
+- When starting the scene, you should be able to turn the camera or controllers by holding the right mouse button, move using the **WASD** keys, press **Tab** to loop through headset and controllers, and press **G** to simulate the **Grab** button of the VR controllers
 - Try grabbing and throwing the 3D GameObject
 
 ### Test on a stand-alone VR Headset
 
 #### Setup
-- Make sure that the **XR Device Simulator** object is disabled
 - Connect the VR headset to the PC via USB-C cable
 - In the headset interface, navigate to **Updates** and confirm the USB connection
 - In Unity:
