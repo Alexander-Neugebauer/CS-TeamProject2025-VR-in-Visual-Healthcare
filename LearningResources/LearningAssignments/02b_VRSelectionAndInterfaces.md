@@ -23,7 +23,7 @@ In this assignment, we expand our previous scene to include a 'Ball Spawner' tha
 ## 3. Set up XR interactions
 - Make sure you followed all the steps to install the XR plugin and other packages, as descibed in `03_UnityVRSceneSetup`.
 - Add an **XR Simple Interactable** component to the BallSpawner.
-- In the Hierarchy, navigate to XR Origin --> Camera Offset --> Left Controller --> Near-Far Interactor (the child object of Left Controller), and in the Near-Far Interactor component of the child object, check 'Allow Hovered Activate'. *Attention: The Left Controller GameObject also has a Near-Far Interactor component, however, checking the 'Allow Hovered Activate' option here will not work, you have to check the option in the child object's component.*
+- In the Hierarchy, navigate to XR Origin --> Camera Offset --> Left Controller --> Near-Far Interactor (the child object of Left Controller), and in the Near-Far Interactor component of the child object, check 'Allow Hovered Activate' or make sure it is already checked.
   > Note: This will allow you to use the 'Activated' and 'Deactivated' events in the XR Interactable components without having to grab the object first.
 
 ## 4. Create the BallSpawner logic
@@ -38,7 +38,7 @@ In this assignment, we expand our previous scene to include a 'Ball Spawner' tha
 ## 5. Assign the methods
 - Select the BallSpawner, and in the XR Simple Interactable component, go to 'Interactable Events'.
 - Add an Event to 'First Hover Entered', drag and drop the BallSpawner in the Field and select the `BallSpawnerBehavior` script and the `ShowTextInterface` method.
-- Do the same for 'Last Hover Existed' and the `HideTextInterface` Event.
+- Do the same for 'Last Hover Exited' and the `HideTextInterface` Event.
 - Next, add an Event to 'Activated' and assign the `SpawnBall` method.
 
 ## 6. Test your scene
